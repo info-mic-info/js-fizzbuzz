@@ -8,34 +8,78 @@
 // 4) per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
-const container= document.querySelector (' .container')
+// const container= document.querySelector (' .container')
+
+// for (let i = 1; i <= 100; i++) {
+
+//     let element 
+
+//     if (i % 3 === 0 && i % 5 === 0) {
+
+//        element = '<div class="fizzbuzz"> fizzbuzz </div>'
+
+//         // 'FizzBuzz'
+//     }
+
+//     else if (i % 3 === 0) {
+//         element = '<div class="fizzbuzz"> fizzbuzz </div>'
+//     }
+
+//     else if (i % 5 === 0) {
+//         element = '<div class="fizzbuzz"> fizzbuzz </div>'
+//     }
+
+//     else {
+//         element = `<div class="fizzbuzz"> ${i} </div>`
+//     }
+
+
+
+// container.innerHTML += element;
+
+//     console.log (element)
+
+// } 
+
+
+const container = document.querySelector(' .container')
 
 for (let i = 1; i <= 100; i++) {
 
+    let class_name = 'element'
+    let element_value = ""
+
+
 
     if (i % 3 === 0 && i % 5 === 0) {
+        element_value = "FizzBuzz"
+        class_name += ' bg-red'
 
-       let element = '<div class="fizzbuzz"> ${i} </div>'
+
         
-        // 'FizzBuzz'
     }
 
     else if (i % 3 === 0) {
-        element = 'Fizz'
+        element_value = "Fizz"
+        class_name += ' bg-green txt-white'
     }
 
     else if (i % 5 === 0) {
-        element = 'Buzz'
+        element_value = "Buzz"
     }
 
     else {
-        element =  i
+        element_value = i
     }
 
-    document.getElementById("my-element").innerHTML = element;
 
-container.innerHTML += element;
+    // container.innerHTML =  container.innerHTML + .....;
+    container.innerHTML += `<div class="${class_name}"> ${element_value} </div>`;
 
-    console.log (element)
 
-} 
+}
+
+
+
+
+
