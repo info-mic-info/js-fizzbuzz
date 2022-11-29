@@ -8,9 +8,9 @@
 // 4) per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
+const container= document.querySelector (' .container')
 
 for (let i = 1; i <= 100; i++) {
-
 
 
     if (i % 3 === 0 && i % 5 === 0) {
@@ -25,9 +25,7 @@ for (let i = 1; i <= 100; i++) {
     }
 
     else if (i % 5 === 0) {
-        element = 
-        
-        // 'Buzz'
+        element = 'Buzz'
     }
 
     else {
@@ -35,6 +33,8 @@ for (let i = 1; i <= 100; i++) {
     }
 
     document.getElementById("my-element").innerHTML = element;
+
+container.innerHTML += element;
 
     console.log (element)
 
