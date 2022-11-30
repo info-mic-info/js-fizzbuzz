@@ -8,6 +8,8 @@
 // 4) per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
 
+// FORMA LUNGA 
+
 // const container= document.querySelector (' .container')
 
 // for (let i = 1; i <= 100; i++) {
@@ -42,6 +44,8 @@
 // } 
 
 
+// FORMA CONTRATTA
+
 const container = document.querySelector(' .container')
 
 for (let i = 1; i <= 100; i++) {
@@ -66,10 +70,12 @@ for (let i = 1; i <= 100; i++) {
 
     else if (i % 5 === 0) {
         element_value = "Buzz"
+        class_name= "bg-yellow"
     }
 
     else {
         element_value = i
+        class_name = "bg-blue"
     }
 
 
